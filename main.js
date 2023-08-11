@@ -16,7 +16,7 @@ xhr.addEventListener('readystatechange',  () => {
         let output = ' '
 			for(let i=0; i < response.results.length; i++) {
 				output += `
-							<div style="width:25%; margin:20px;">
+							<div style="width:25%; margin:20px; border:2px solid white;">
                              
 							<div>
 
@@ -25,14 +25,14 @@ xhr.addEventListener('readystatechange',  () => {
 
 		                    
 							
-							<a style="color: black; font-size:25px; font-weight:500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="${response.results[i].original_video_url}" target="_blank">Get the recipe on live!</a>; &nbsp;
+							<a style="color: white; font-size:25px; font-weight:500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="${response.results[i].original_video_url}" target="_blank">Get the recipe on live!</a>; &nbsp;
 		
 								
 							
                            
-							<h4><b>DISH_NAME:</b> ${response.results[i].slug}</h4> <br/>  &nbsp;
-							<h4><b>INGREDIENTS:</b> ${response.results[i].description}</h4><br/>  &nbsp;
-                            <p><b>SERVES:</b> ${response.results[i].num_servings}</p>
+							<h4 style="color:white;"><b>DISH_NAME:</b> ${response.results[i].slug}</h4> <br/>  &nbsp;
+							<h4 style="color:white;"><b>INGREDIENTS:</b> ${response.results[i].description}</h4><br/>  &nbsp;
+                            <p style="color:white;"><b>SERVES:</b> ${response.results[i].num_servings}</p>
 							</div>
 							</div>
 						
