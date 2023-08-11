@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/127d5d32f3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Document</title>
+</head>
+<body  >
+   
+   
+   
+        <header> 
+            
+                <nav >
+                    <ul>
+                        <li>
+                        <a style="padding-left: 80px;" href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="./login.html">LOG IN</a>
+                        </li>
+                        <li>
+                            <a href="./signup.html">SIGN UP</a>
+                        </li>
+                        <li>
+                            <a href="#home">EXPLORE US</a>
+                        </li>
+                        <li>
+                            <a href="#footer">CONTACT US</a>
+                        </li>
+                    </ul>
+
+                    
+                </nav> 
+                <section>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-IZuZCYzPRYeTDz6Cbd-d14GGTDPgW8eHQ&usqp=CAU" class="brands" alt="" role="presentation" >
+                   
+                        <h2> Get recipes for food, drinks & desserts! </h2>
+                        <h2> DUH! Also share your special recipe... </h2>
+                        <div class="inputs">
+                            <input  style="background:transparent ;"    id="search-text"  placeholder="search for your favourite dish!" type="text" />
+                            <i id="search-btn"  class="fa-solid fa-magnifying-glass"></i>
+                    
+                        </div>
+                </section>
+
+                <div id="my-div" style="display: flex; justify-content: center; flex-wrap: wrap; " class="container">
+                <!-- <div class="recipe-title"> Recipe Title</div>
+                <div class="recipe-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfx0EZ_atQzJ02juJ9rckhMv2MM2vpmzYBHA&usqp=CAU" alt="Recipe">
+                </div>
+                <div class="recipe-text">
+                    <ul>
+                        <li>step 1</li>
+                        <li>step 2</li>
+                        <li>step 3</li>
+                        <li>step 4</li>
+                    </ul> -->
+                </div>
+                
+                
+                </div>
+                <hr>
+                
+                   <style>
+                      * {box-sizing: border-box}
+                      
+                      body {font-family: Verdana, sans-serif; margin:0}
+                      
+                      .images {display: none}
+                      
+                      img {
+                          vertical-align: middle;
+                        width:50%;
+                      }
+                      
+                      /* Slideshow container */
+                      .carousel-container {
+                         max-width: 1000px;
+                         position: relative;
+                         margin: auto;
+                      }
+                      
+                      /* Next & previous buttons */
+                      .previous, .next {
+                         cursor: pointer;
+                         position: absolute;
+                         top: 50%;
+                         width: auto;
+                         padding: 16px;
+                         margin-top: -22px;
+                         color: white;
+                         font-weight: bold;
+                         font-size: 18px;
+                         transition: 0.6s ease;
+                         border-radius: 0 3px 3px 0;
+                         user-select: none;
+                      }
+                      
+                      /* Position the "next button" to the right */
+                      .next {
+                         right: 0;
+                         border-radius: 3px 0 0 3px;
+                      }
+                      
+                      
+                      /* On hover, add a black background color with a little bit seethrough */
+                      .prev:hover, .next:hover {
+                         background-color: rgba(0,0,0,0.8);
+                      }
+                      
+                      
+                      /* The dots/bullets/indicators */
+                      .navigation-dot {
+                         cursor: pointer;
+                         height: 15px;
+                         width: 15px;
+                         margin: 0 2px;
+                         background-color: #bbb;
+                         border-radius: 50%;
+                         display: inline-block;
+                         transition: background-color 0.6s ease;
+                      }
+                      .active, .navigation-dot:hover {
+                         background-color: #717171;
+                      }
+                   </style>
+                
+                   <div class="carousel-container">
+                    <h1>VARITIES OF FOOD AVAILABLE HERE...JUST A CLICK AND GET THE RECIPE!!</h1>
+                      <div class="images fade">
+                         <img src="https://img.freepik.com/free-photo/indian-butter-chicken-black-bowl-black-background_123827-20757.jpg?size=626&ext=jpg">
+                         </div>
+                         <div class="images fade">
+                            <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?size=626&ext=jpg">
+                         </div>
+                         <div class="images fade">
+                            <img src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?size=626&ext=jpg">
+                         </div>
+                         <div class="images fade">
+                            <img src="https://img.freepik.com/free-photo/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-red-onion-wooden-table_2829-19631.jpg?size=626&ext=jpg">
+                         </div>
+                         <div class="images fade">
+                            <img src="https://img.freepik.com/premium-photo/bowl-food-with-piece-meat-vegetables-it_867452-673.jpg?size=626&ext=jpg">
+                         </div>
+                         <div class="images fade">
+                            <img src="https://img.freepik.com/premium-photo/manchurian-hakka-schezwan-noodles-popular-indochinese-food-served-bowl_466689-46524.jpg?size=626&ext=jpg">
+                         </div>
+                         
+                         <!-- Previous and Next Buttons -->
+                         <a class="previous" onclick="plusSlides(-1)">❮</a>
+                         <a class="next" onclick="plusSlides(1)">❯</a>
+                   </div>
+                   <br>
+                   
+                   <!-- Navigation Dots-->
+                   <div style="text-align:center">
+                      <span class="navigation-dot" onclick="currentSlide(1)"></span>
+                      <span class="navigation-dot" onclick="currentSlide(2)"></span>
+                      <span class="navigation-dot" onclick="currentSlide(3)"></span>
+                   </div>
+                   <script>
+                      var currentIndex = 1;
+                      
+                      //Show current image
+                      showSlides(currentIndex);
+                      
+                      //Function to move Next
+                      function plusSlides(n) {
+                         showSlides(currentIndex += n);
+                      }
+                      
+                      //Function to move back
+                      function currentSlide(n) {
+                         showSlides(currentIndex = n);
+                      }
+                      
+                      
+                      //Initiate moving of slides
+                      function showSlides(n) {
+                         var i;
+                         var slides = document.getElementsByClassName("images");
+                         var dots = document.getElementsByClassName("navigation-dot");
+                         if (n > slides.length) {currentIndex = 1}
+                         if (n < 1) {currentIndex = slides.length}
+                         for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                         }
+                         for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                         }
+                         slides[currentIndex-1].style.display = "block";
+                         dots[currentIndex-1].className += " active";
+                      }
+                     
+        
+                   </script>
+                
+                <div  id="home" class="home">
+                <div class="home-content">
+                    <h3>Heyo!&nbsp;<span>Foodies</span></h3>
+                    <h1> <span>Tables are turned</span> </h1>&nbsp; &nbsp;
+                    <h3> DON'T&nbsp; JUST ORDER &nbsp; LEARN&nbsp;TO <span id="test">COOK</span></h3>
+                    <p>A platform would be provided with you to display your art in the form of food and spreading it the world. </p> <br> <br>
+                    
+                    <form >
+                        <textarea  style="background-color: rgb(188, 183, 183);" name="" id="" cols="40" rows="10" placeholder="Sway your recipes with us and help us reach your food to the world " required></textarea><br><br>
+                    </form>
+                  
+                          <a href="https://www.gmail.com" target="_blank"   class="btn-box">Submit Your Idea</a>&nbsp; &nbsp;
+                </div>
+            </div> 
+            <!-- <div style="width: 500px; height: 500px;"></div> -->
+           
+         
+            <!-- <div>
+            <div style="display: flex; justify-content: space-between; " >
+                <form >
+                     <input id="search-text" style="height: 2.2em; border-radius: 10px;" placeholder="search..." type="text" /> -->
+                    <!-- <i id="search-btn"  class="fa-solid fa-magnifying-glass"></i> -->
+                    
+                <!-- </form>
+            </div>
+        </div>  -->
+       
+        
+        <!-- <div id="my-div" style="display: flex; justify-content: center; flex-wrap: wrap; " class="container">
+             -->
+    
+        <!-- </div> -->
+        <footer  id="footer"  class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our journey</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Copyright program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>contact</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-envelope"></i>recippe.yummy@gmail.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-phone"></i> +91-9876543210</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i>recipe_yummy</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i>recesz_yumz</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </header>
+    </div>
+        <script>
+            var typed = new Typed('#test', {
+              strings: ['<i>COOK</i> &<i>UNLEASH YOUR SKILLS AT IT</i>','<i> CREATE YOUR OWN DISH & SHARE.</i>'],
+              typeSpeed: 50,
+            });
+          </script>
+        
+    <script src="./main.js"></script>
+</body>
+</html>
